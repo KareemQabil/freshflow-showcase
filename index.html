@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshFlow Showcase</title>
+    <meta
+      name="description"
+      content="Public-safe showcase for FreshFlow ERP, built from real frontend screenshots and collaboration-ready case-study framing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="#top">FreshFlow Showcase</a>
+        <nav>
+          <a href="#surfaces">Surfaces</a>
+          <a href="#boundary">Boundary</a>
+          <a href="https://github.com/m4hosam" target="_blank" rel="noreferrer">m4hosam</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">ERP operations · collaboration showcase</p>
+            <h1>Orders, suppliers, and purchasing workflows shown through real FreshFlow ERP captures.</h1>
+            <p>
+              This repo is the public case-study layer for FreshFlow ERP. It focuses on operational breadth and
+              workflow clarity, while keeping the raw implementation and business-sensitive behavior private.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="README.md">Read case study</a>
+              <a class="button secondary" href="https://github.com/m4hosam" target="_blank" rel="noreferrer">Collaboration note</a>
+            </div>
+            <ul class="chips">
+              <li>Orders</li>
+              <li>Suppliers</li>
+              <li>Purchase orders</li>
+              <li>ERP workflows</li>
+            </ul>
+          </div>
+          <div class="hero-image card">
+            <img src="assets/screenshots/freshflow-orders.png" alt="FreshFlow orders operations screenshot" />
+          </div>
+        </section>
+
+        <section class="section" id="surfaces">
+          <div class="section-head">
+            <p class="eyebrow">Operational surfaces</p>
+            <h2>Real ERP screenshots with broader execution context.</h2>
+            <p>
+              The images below come from existing frontend screenshot artifacts. They are paired with a public-safe
+              narrative around the ERP modules and stabilization work behind the product direction.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="card feature">
+              <div class="copy">
+                <span class="tag">Orders</span>
+                <h3>Orders operations</h3>
+                <p>
+                  Operational order tracking, status segmentation, bulk actions, and table-driven workflow control.
+                </p>
+              </div>
+              <img src="assets/screenshots/freshflow-orders.png" alt="FreshFlow orders operations screen" />
+            </article>
+
+            <article class="card">
+              <div class="copy">
+                <span class="tag">Suppliers</span>
+                <h3>Supplier and payable visibility</h3>
+                <p>Vendor management surface with payable and balance visibility.</p>
+              </div>
+              <img src="assets/screenshots/freshflow-suppliers.png" alt="FreshFlow suppliers screen" />
+            </article>
+
+            <article class="card">
+              <div class="copy">
+                <span class="tag">Purchasing</span>
+                <h3>Purchase orders and receiving</h3>
+                <p>Purchase order metrics, receipt tracking, and discrepancy-aware operational framing.</p>
+              </div>
+              <img src="assets/screenshots/freshflow-purchase-orders.png" alt="FreshFlow purchase orders screen" />
+            </article>
+          </div>
+        </section>
+
+        <section class="section boundary" id="boundary">
+          <div class="section-head">
+            <p class="eyebrow">Boundary</p>
+            <h2>Public-safe by design</h2>
+          </div>
+
+          <div class="boundary-grid">
+            <article class="card compact">
+              <h3>Public here</h3>
+              <ul>
+                <li>Real screenshots from frontend artifacts</li>
+                <li>ERP workflow framing</li>
+                <li>Collaboration attribution and execution narrative</li>
+              </ul>
+            </article>
+            <article class="card compact">
+              <h3>Kept private</h3>
+              <ul>
+                <li>Raw backend implementation</li>
+                <li>Environment and customer data</li>
+                <li>Business-sensitive rule detail</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
