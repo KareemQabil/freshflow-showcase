@@ -11,6 +11,8 @@ FreshFlow is a collaboration direction built with my developer friend [m4hosam](
 - [Operational scope](docs/operational-scope.md)
 - [Stabilization notes](docs/stabilization-notes.md)
 
+![FreshFlow public scope](assets/infographics/overview.svg)
+
 ## What this showcase covers
 
 - Orders operations surface
