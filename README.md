@@ -6,6 +6,11 @@ This public layer is based on real frontend screenshots and planning artifacts f
 
 FreshFlow is a collaboration direction built with my developer friend [m4hosam](https://github.com/m4hosam).
 
+## Supporting docs
+
+- [Operational scope](docs/operational-scope.md)
+- [Stabilization notes](docs/stabilization-notes.md)
+
 ## What this showcase covers
 
 - Orders operations surface
