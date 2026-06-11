@@ -2,9 +2,7 @@
 
 Public-safe case study and screenshot showcase for FreshFlow ERP.
 
-This public layer is based on real frontend screenshots and planning artifacts from the active workspace. It is intended to show the breadth of the ERP surface without exposing raw backend code, environment secrets, or business-sensitive implementation details.
-
-FreshFlow is a collaboration direction built with my developer friend [m4hosam](https://github.com/m4hosam).
+This repo is the public explanation layer for a broader ERP direction built in collaboration with my developer friend [m4hosam](https://github.com/m4hosam). It uses real interface screenshots and public-safe framing to show the product surface without exposing backend logic, secrets, or customer-specific implementation details.
 
 ## Supporting docs
 
@@ -13,142 +11,141 @@ FreshFlow is a collaboration direction built with my developer friend [m4hosam](
 
 ![FreshFlow public scope](assets/infographics/overview.svg)
 
-## What this showcase covers
+## What this showcase demonstrates
 
-- Orders operations surface
-- Supplier ledger and vendor management surface
-- Purchase order workflow surface
-- Stabilization and execution-plan framing for the broader ERP direction
-
-## Why this product matters
-
-FreshFlow is aimed at the operational layer where business software often breaks down:
-
-- order states become hard to trace across teams
-- supplier balances and payables drift away from purchasing reality
-- purchase receiving, discrepancies, and stock effects are poorly surfaced
-- finance, inventory, and order operations behave like separate systems instead of one workflow
-
-## Who the system appears to serve
-
-- operations owners who need daily visibility into order and inventory flow
-- supply or purchasing operators who manage vendor relationships and receiving
-- finance-facing users who need supplier balance and payable context
-- admins who need a broader ERP shell with permissions, documents, and settings
-
-## Product direction
-
-FreshFlow is positioned around day-to-day business operations:
-
-- order lifecycle visibility
+- orders operations and order-state visibility
 - supplier and payable workflows
-- purchase order receiving and discrepancy handling
-- finance- and operations-facing dashboard surfaces
-- Arabic-aware ERP navigation and module organization
+- purchase order handling
+- drivers, users, and inventory administration
+- Arabic-aware module organization inside a broader ERP shell
 
-## Broader module map
+## Product framing
 
-The public screenshots show only part of the system. Source inspection suggests a broader module surface around:
+FreshFlow is aimed at the day-to-day coordination problems that make operational software feel fragmented:
 
-| Module | Public signal available here |
-| --- | --- |
-| Orders | Real screenshot in this repo |
-| Suppliers | Real screenshot in this repo |
-| Purchase orders | Real screenshot in this repo |
-| Inventory and stock movement | Referenced in flow and execution plan |
-| Drivers and delivery | Present in the route surface, not shown publicly here yet |
-| Expenses and financial reports | Present in the route surface, not shown publicly here yet |
-| Documents and RBAC | Present in the route surface, not shown publicly here yet |
-| ZATCA and settings | Present in the route surface, not shown publicly here yet |
+- orders, purchasing, stock, and supplier balances often drift apart
+- delivery and driver operations are handled outside the main ERP story
+- finance-facing views and operations-facing views are separated too sharply
+- module breadth grows, but the workspace shell loses coherence
 
-## Operational flow map
+The public screenshots here are meant to show that the direction is operationally broad, not just a few isolated pages.
+
+## Operational map
 
 ```mermaid
 flowchart LR
-    A[Customer and order demand] --> B[Orders operations]
-    B --> C[Inventory and stock movement]
-    C --> D[Purchase orders]
-    D --> E[Supplier ledger]
-    B --> F[Driver and delivery handling]
-    E --> G[Finance and reporting]
+    A[Orders] --> B[Inventory]
+    B --> C[Purchase orders]
+    C --> D[Suppliers]
+    A --> E[Drivers and delivery]
+    D --> F[Finance and reporting]
+    G[Users and permissions] --> A
+    G --> B
 ```
 
-## Stabilization framing
+## Screenshot walkthrough
 
-The broader execution plan behind the system emphasizes:
-
-- auth and API contract alignment
-- order lifecycle and stock integrity
-- storefront and checkout hardening
-- purchasing and supplier ledger accuracy
-- ERP frontend reliability
-- finance and reporting verification
-- automated quality gates
-
-```mermaid
-flowchart TD
-    A[Auth and API contract alignment] --> B[Order lifecycle and stock integrity]
-    B --> C[Storefront and checkout hardening]
-    C --> D[Purchasing and supplier ledger accuracy]
-    D --> E[ERP frontend reliability]
-    E --> F[Finance and reporting verification]
-    F --> G[Automated quality gates]
-```
-
-## Screenshot gallery
-
-### Orders operations
-
-Shows the orders surface with metrics, filter controls, status segmentation, and operational table state.
-
-![FreshFlow orders operations](assets/screenshots/freshflow-orders.png)
-
-### Suppliers and payables
-
-Shows the supplier management surface and ledger-facing operational metrics.
-
-![FreshFlow suppliers surface](assets/screenshots/freshflow-suppliers.png)
-
-### Purchase orders
-
-Shows purchasing workflow metrics, receipt framing, and discrepancy-oriented visibility.
-
-![FreshFlow purchase orders surface](assets/screenshots/freshflow-purchase-orders.png)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="assets/screenshots/freshflow-orders.png" alt="FreshFlow orders surface" width="100%" />
+      <br />
+      <strong>1. Orders operations</strong>
+      <br />
+      The orders surface shows filters, metrics, and operator table states rather than a decorative dashboard. It signals that order management is treated as active daily work.
+    </td>
+    <td width="50%" valign="top">
+      <img src="assets/screenshots/freshflow-purchase-orders.png" alt="FreshFlow purchase orders" width="100%" />
+      <br />
+      <strong>2. Purchase orders</strong>
+      <br />
+      Purchasing is framed with its own workflow metrics and status visibility, which matters because procurement usually breaks when it is hidden behind generic inventory UI.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="assets/screenshots/freshflow-suppliers.png" alt="FreshFlow suppliers surface" width="100%" />
+      <br />
+      <strong>3. Suppliers and payables</strong>
+      <br />
+      Supplier balance, payable context, and vendor records are treated as first-class operational surfaces, not side spreadsheets.
+    </td>
+    <td width="50%" valign="top">
+      <img src="assets/screenshots/freshflow-suppliers-ar.png" alt="FreshFlow suppliers surface in Arabic" width="100%" />
+      <br />
+      <strong>4. Arabic supplier workflow</strong>
+      <br />
+      This capture is useful because it proves the system direction is comfortable in Arabic, not just in English admin layouts.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="assets/screenshots/freshflow-drivers.png" alt="FreshFlow drivers management" width="100%" />
+      <br />
+      <strong>5. Drivers management</strong>
+      <br />
+      Driver balances, settlement state, and cost metrics show that delivery operations are part of the ERP surface rather than external tooling.
+    </td>
+    <td width="50%" valign="top">
+      <img src="assets/screenshots/freshflow-users.png" alt="FreshFlow users management" width="100%" />
+      <br />
+      <strong>6. Users and permissions</strong>
+      <br />
+      The users surface shows that the workspace is not only about transactions; it also includes operator administration and role-aware business workflows.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="assets/screenshots/freshflow-inventory.png" alt="FreshFlow inventory screen" width="100%" />
+      <br />
+      <strong>7. Inventory administration</strong>
+      <br />
+      Inventory shows stock visibility, pricing, statuses, and action controls in a more advanced operational context than a simple catalog table.
+    </td>
+    <td width="50%" valign="top">
+      <img src="assets/screenshots/freshflow-purchase-orders.png" alt="FreshFlow purchasing workflow repeat" width="100%" />
+      <br />
+      <strong>8. Purchasing as a system neighbor</strong>
+      <br />
+      Purchasing is repeated here intentionally because it is the bridge between suppliers, stock integrity, and operations. It is one of the strongest business-software signals in the public layer.
+    </td>
+  </tr>
+</table>
 
 ## What the screenshots prove
 
-- the ERP shell is not a placeholder; it already expresses operational modules and consistent navigation
-- orders, suppliers, and purchasing are treated as connected business workflows
-- metrics, filters, actions, and table states are framed for real operator use instead of empty marketing chrome
-- the public layer can show meaningful system breadth without exposing the underlying private implementation
+- FreshFlow is broader than a single dashboard or storefront shell
+- orders, suppliers, purchasing, drivers, and users are organized as connected ERP modules
+- the public evidence shows real operational screens rather than only marketing pages
+- Arabic-aware product direction is visible in the interface, not only in the README copy
 
 ## Collaboration note
 
-This showcase should be understood as a collaboration direction, not a solo claim. The public repo exists to explain the product surface and workflow scope honestly while crediting the shared build effort.
+This showcase represents a collaboration direction. It is not presented as a solo build claim. The public repo exists to explain the product surface honestly while crediting the shared work behind the broader system direction.
 
-## Why this repo is public-safe
+## Public vs private boundary
 
 Public here:
 
-- real screenshots
+- real frontend screenshots
 - collaboration attribution
 - product framing
-- execution-plan perspective
+- workflow scope explanation
 
 Kept private by design:
 
 - production backend implementation
 - environment credentials
-- customer or operational business data
-- internal business rules that should not be published raw
+- customer data
+- business-specific rules and deployment details
 
 ## What can be added later
 
 Future public-safe additions can include:
 
-- a sanitized architecture map covering ERP frontend, backend, and storefront boundaries
-- more screenshots from finance, documents, or delivery operations where safe
-- deeper case-study notes around stabilization and testing strategy
+- sanitized architecture notes around ERP frontend, backend, and storefront boundaries
+- curated finance and reporting screenshots
+- a deeper case study on stabilization, test strategy, and execution sequencing
 
 ## Related direction
 
