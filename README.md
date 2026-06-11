@@ -102,15 +102,15 @@ flowchart LR
       <br />
       Inventory shows stock visibility, pricing, statuses, and action controls in a more advanced operational context than a simple catalog table.
     </td>
-    <td width="50%" valign="top">
-      <img src="assets/screenshots/freshflow-purchase-orders.png" alt="FreshFlow purchasing workflow repeat" width="100%" />
-      <br />
-      <strong>8. Purchasing as a system neighbor</strong>
-      <br />
-      Purchasing is repeated here intentionally because it is the bridge between suppliers, stock integrity, and operations. It is one of the strongest business-software signals in the public layer.
-    </td>
   </tr>
 </table>
+
+## Operational coverage visible from the public layer
+
+- orders are treated as active operations rather than passive records
+- suppliers, purchasing, and inventory are framed as one connected business workflow
+- drivers and users prove the system extends beyond stock and invoicing screens
+- Arabic and English views both support the same broader ERP direction
 
 ## What the screenshots prove
 
